@@ -9,7 +9,7 @@ export default class Footer extends Component {
           ©2020 <b>Pesky Pooch</b> Training Ltd.
         </p>
         <p className="social-icons">
-          <a href="https://www.facebook.com/PeskyPooch/" alt="pesky pooch facebook" target="_blank" className="social-link">
+          <a href="https://www.facebook.com/PeskyPooch/" alt="pesky pooch facebook" target="_blank">
             <i className="fab fa-facebook"></i>
           </a>
         </p>
