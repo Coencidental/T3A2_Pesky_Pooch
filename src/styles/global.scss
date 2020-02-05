@@ -12,6 +12,10 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  textarea {
+    padding-top: 0.5rem;
+  }
 }
 
 .page-wrapper {

@@ -1,4 +1,7 @@
 @import './colours.scss';
+* {
+  font-size: 1rem;
+}
 
 #events-title {
   color: white;
@@ -20,6 +23,11 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    font-size: 1rem;
+
+    p {
+      font-size: 1.25rem;
+    }
 
     .event-card {
       text-align: center;
@@ -73,6 +81,14 @@
   background-color: $otherblue;
   padding: 1rem;
 
+  h2 {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
   * {
     font-size: 1.25rem;
   }
@@ -87,6 +103,7 @@
     padding: 0.5rem;
     border-radius: 0.5rem;
     background-color: $otherblue;
+    font-size: 1rem;
 
     .service-card {
       width: 50%;
@@ -102,7 +119,7 @@
       }
 
       .service-desc {
-        font-size: 1rem
+        font-size: 1rem;
       }
 
       .service-cost {
@@ -143,5 +160,18 @@
     background-color: $ceramic;
     padding: 0.25rem;
     color: black;
+  }
+}
+
+.services-text {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: $babyblue;
+  width: 100%;
+  text-align: center;  
+  margin: 1rem auto;
+
+  * {
+    font-size: 1.5rem;
   }
 }
