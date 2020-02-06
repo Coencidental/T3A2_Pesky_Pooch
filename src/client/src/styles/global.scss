@@ -5,13 +5,17 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+  border-radius: 0.25rem;
   list-style: none;
   box-sizing: border-box;
-  font-size: 1rem;
   transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) all;
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  textarea {
+    padding-top: 0.5rem;
   }
 }
 
@@ -61,38 +65,24 @@
     font-size: 1.25rem;
   }
 
-  .services {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
 
-    .service-card {
-      min-width: 25%;
-      max-width: 50%;
-      text-align: center;
-      padding: 0.5rem;
-      background: $babyblue;
-      border: 0.25rem solid $otherblue;
-      border-radius: 0.5rem;
+   a {
+      color: white;
+      border-radius: 1rem;
+      text-transform: uppercase;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight:  bold;
 
-      * {
-        padding: 1rem;
-        border-bottom: 0.25rem solid $otherblue;
-      }
-
-      .service-desc {
-        font-size: 1rem
-      }
-
-      .service-cost {
-        font-size: 2rem;
+      &:active, &:hover {
+        // background: #1b9cff67;
+        background: rgba(60, 55, 68, 0.438);;
+        transition: 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) all;
       }
     }
   }
-}
 
 .services-text {
   width: 100%;
@@ -137,6 +127,7 @@
     .event-loc {
       font-size: 2rem;
     }
+
   }
 }
 
@@ -164,7 +155,7 @@
 .service-buttons {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
 
   button {
@@ -184,11 +175,16 @@
   justify-content: center;
   align-items: center;
   background-color: $babyblue;
-  padding: 1rem;
+  padding: 0.25rem;
 
   button {
     margin: 0.25rem;
     border-radius: 0.25rem;
+    background-color: $otherblue;
+  }
+
+  fieldset {
+    padding: 0.25rem;
   }
 
   .login-form {
@@ -214,9 +210,12 @@
       }
 
       label {
-        width: 50%;
+        width: fit-content;
         font-size: 1.5rem;
         margin-bottom: 1rem;
+        background-color: $plum;
+        padding: 0.5rem;
+        color: rgb(255, 255, 255);
       }
 
       input {
@@ -224,7 +223,14 @@
         padding: 0.5rem 0;
       }
     }
+
+    button {
+      padding: 1rem;
+      border-radius: 0.25rem;
+      background-color: $otherblue;
+    }
   }
+}
 
 // -- Contact-Page-Form -- //
 
@@ -267,7 +273,7 @@
       //   resize: none;
       //   font-family: Arial, Helvetica, sans-serif;
       // }
-    }
+
   // }
 
 //   .contact-header-txt {
@@ -331,6 +337,19 @@
   }
 }
 
+.services-text {
+  width: 100%;
+}
+
+.text-wrapper {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+
+  * {
+    margin-bottom: 0.5rem;
+  }
+}
 
 @media only screen and (max-width: 952px) {
   .form-container {
@@ -356,6 +375,12 @@
         }
       }
     }
+
+    .contact-form {
+      width: 100vw;
+      padding: 0.25rem;
+    }
   }
 }
+
 @import './mobile.scss';

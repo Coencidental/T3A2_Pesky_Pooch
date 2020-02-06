@@ -72,8 +72,8 @@ export default class loginForm extends Component {
         </fieldset>
         <fieldset>
           { (sessionStorage.getItem('token')) ?
-          (<input data-cy="logoutbutton" type="submit" value="logout user" onChange={this.handleRemove} />):
-          (<input data-cy="loginbutton" type="submit" value="Login user" />)}
+          (<button data-cy="logoutbutton" type="submit" value="logout user" onChange={this.handleRemove} />):
+          (<button data-cy="loginbutton" type="submit">Login user</button>)}
         </fieldset>
      </form>
      </container>
