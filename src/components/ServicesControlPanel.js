@@ -22,7 +22,6 @@ export default function ServicesControlPanel(props) {
   }
 
   useEffect(() => {
-    console.log("Mounted service control panel")
     props.updateServices()
   }, [])
 
