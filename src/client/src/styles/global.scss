@@ -65,7 +65,6 @@
     font-size: 1.25rem;
   }
 
-
   a {
     color: white;
     border-radius: 1rem;
@@ -95,7 +94,7 @@
     margin-bottom: 0.5rem;
   }
 }
-
+}
 // -- Events -- //
 
 .events {
@@ -231,79 +230,79 @@
 
 // -- Contact-Page-Form -- //
 
-  // .contact-form {
-    // width: 100vw;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: space-evenly;
+  .contact-form {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
-    // fieldset {
-    //   width: 75%;
-    //   margin: auto;
-    //   display: flex;
-    //   flex-direction: column;
-    //   padding: 1rem;
-    //   border: none;
+    fieldset {
+      width: 75%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      border: none;
 
-  //     * {
-  //       margin: auto;
-  //       text-align: center;
-  //       font-size: 1rem;
-  //       border-radius: 0.25rem;
-  //     }
+      * {
+        margin: auto;
+        text-align: center;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+      }
 
-  //     label {
-  //       width: 50%;
-  //       font-size: 1.5rem;
-  //       margin-bottom: 1rem;
-  //     }
+      label {
+        width: 50%;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
 
-  //     input {
-  //       width: 80%;
-  //       padding: 0.5rem 0;
-  //     }
+      input {
+        width: 80%;
+        padding: 0.5rem 0;
+      }
 
-      // .message {
-      //   width: 80%;
-      //   height: 25vh;
-      //   resize: none;
-      //   font-family: Arial, Helvetica, sans-serif;
-      // }
+      .message {
+        width: 80%;
+        height: 25vh;
+        resize: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
 
-  // }
+  .contact-header-txt {
+    overflow: hidden;
+    height: 30vh;
+    min-width: 100vw;
+    min-height: 100%;
+  }
 
-//   .contact-header-txt {
-//     overflow: hidden;
-//     height: 30vh;
-//     min-width: 100vw;
-//     min-height: 100%;
-//   }
+  .contact-page-subtitle {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    color: $tarmac;
+  }
 
-//   .contact-page-subtitle {
-//     text-align: center;
-//     margin-bottom: 2.5rem;
-//     line-height: 145%;
-//     width: 70%;
-//     margin-left: 15%;
-//     color: $tarmac;
-//   }
-
-//   .contact-title {
-//     font-size: 180%;
-//     font-weight: 300;
-//     word-spacing: 2px;
-//     letter-spacing: 1px;
-//     text-align: center;
-//     padding-top: 3rem;
-//     padding-top: 1.75rem;
-//     margin-bottom: 2rem;
-//   }
-// // }
-
-// .successful {
-//   background-color: rgb(73, 168, 73) !important;
+  .contact-title {
+    font-size: 180%;
+    font-weight: 300;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 3rem;
+    padding-top: 1.75rem;
+    margin-bottom: 2rem;
+  }
 // }
+
+.successful {
+  background-color: rgb(73, 168, 73) !important;
+}
 
 // -- reviews / testimonials -- //
 .reviews {
