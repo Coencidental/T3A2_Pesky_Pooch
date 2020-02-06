@@ -1,14 +1,22 @@
-import React, { Component } from 'react';
-import ContactForm from '../forms/ContactForm'
+import React, { Component } from "react";
+import ContactForm from "../forms/ContactForm";
 
 class ContactPage extends Component {
   render() {
-    return(
+    return (
       <div className="form-container">
-      <h1 className="page-title">Get in contact!</h1>
-      <ContactForm />
+        <div className="contact-header-txt">
+          <h1 className="contact-title">We'd love to hear from you</h1>
+          <p className="contact-page-subtitle">
+            Whether you have an enquiry about our services, events, pricing, or
+            anything else, our team is ready to answer all your questions.
+          </p>
+        </div>
+        {/* <section className="content-wrapper"> */}
+        <ContactForm />
+        {/* </section> */}
       </div>
-    )
+    );
   }
 }
 

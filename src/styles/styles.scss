@@ -100,23 +100,23 @@ a.active, a:hover {
     left: 0;
   }
 }
-.contact-form {
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 650px;
-  height: 100vh;
-  align-items: center;
-  background: white;
-  width: 100vw;
-}
+// .contact-form {
+//   font-size: 25px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   height: 650px;
+//   height: 100vh;
+//   align-items: center;
+//   background: white;
+//   width: 100vw;
+// }
 
-.successful {
-  background-color: rgb(73, 168, 73) !important;
-  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
-  transform: scale(1.25);
-}
+// .successful {
+//   background-color: rgb(73, 168, 73) !important;
+//   transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+//   transform: scale(1.25);
+// }
 
 .content-wrapper {
   width: 100%;
@@ -132,25 +132,25 @@ a.active, a:hover {
 .pagecontent {
   width: 80vw;
   text-align: left;
-  background-color: $babyblue;
+  // background-color: $babyblue;
   padding: 1rem;
   border-radius: 0.5rem;
 }
 
 
-.contact-header {
-  font-size: 29px;
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  position: absolute;
-}
+// .contact-header {
+//   font-size: 29px;
+//   display: flex;
+//   justify-content: space-around;
+//   align-content: space-around;
+//   position: absolute;
+// }
 
-.contact-label {
-  display: block;
-  position: relative;
-  margin: 1rem;
-}
+// .contact-label {
+//   display: block;
+//   position: relative;
+//   margin: 1rem;
+// }
 .header {
   display: absolute;
   justify-content: center;
@@ -166,16 +166,20 @@ a.active, a:hover {
   height: 600px;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  bottom: 0rem;
-  padding: 1.5rem;
-  font-size: 1.5rem;
+// .footer {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   text-align: center;
+//   bottom: 0rem;
+//   padding: 1.5rem;
+//   font-size: 1.5rem;
 
-  i {
-    font-size: 2rem;
-  }
-}
+//   i {
+//     font-size: 2rem;
+//   }
+
+//   a {
+//     text-decoration: none;
+//   }
+// }
