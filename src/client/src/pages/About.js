@@ -8,7 +8,7 @@ export const About = () => (
     <h1 className="about-title">
       Training for Dogs – Solutions for Owners
     </h1>
-    <p className="about-subtitle">
+    <p className="subtitle">
       At Pesky Pooch, pooch perfection is our passion. For more than 20 years, we've found great success in shaping the behaviour of the Gold Coast's very best, to the very worst canines. Let us unleash your pooches potential!
     </p>
 

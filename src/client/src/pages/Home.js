@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import '../styles/home.scss'
 import TypeWriterFeature from '../assets/TypeWriterFeature';
-// import "../assets/TypeWriterFeature.js";
 
 export const Home = () => (
   <React.Fragment>
