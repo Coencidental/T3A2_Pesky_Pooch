@@ -12,10 +12,9 @@ export default function Services(props) {
   return (
     <>
       <div className="services-container">
-        { props.allServices ? (
+        <h2>All current services</h2>
+        {( props.allServices.count) >= 1 ? (
         <> 
-          <h3>All current services</h3>
-
           <div className="services">      
             { props.allServices.map(service => {
             return (

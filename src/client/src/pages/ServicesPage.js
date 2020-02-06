@@ -47,10 +47,12 @@ export default function ServicesPage(props) {
         } 
         <div>
           <div className="services-text">
-            <p>Bottom line.</p>
+            <p>At Pesky Pooch, we offer a number of services.  
+            If you have a problem with your pooch, we have a solution to match.</p>
           </div>
-          < Services renderChanges={fetchServices} allServices={services}/>
+          
         </div> 
+        < Services renderChanges={fetchServices} allServices={services}/>
         <div className="events-container">
           <h2 id="events-title">All regular Pesky Pooch events</h2>
           <div className="events">
@@ -66,7 +68,7 @@ export default function ServicesPage(props) {
               </div>
             </>
             )
-          })) : (<p>No current events</p>)}
+          })) : (<p>Loading...</p>)}
           </div>
         </div>
         

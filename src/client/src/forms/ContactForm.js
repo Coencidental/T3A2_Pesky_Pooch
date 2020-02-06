@@ -57,15 +57,15 @@ constructor(props) {
         <form data-cy="contact-form" className="contact-form" onSubmit={this.onFormSubmit}>
           <fieldset>
             <label>Email:</label>
-            <input data-cy="email" type="text" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+            <input placeholder="Enter your email" data-cy="email" type="text" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
           </fieldset>
           <fieldset>
             <label>Title:</label>
-            <input data-cy="title" type="text" value={this.state.title} onChange={this.onTitleChange.bind(this)} />
+            <input placeholder="What should your message title be?" data-cy="title" type="text" value={this.state.title} onChange={this.onTitleChange.bind(this)} />
           </fieldset>
           <fieldset>
             <label>Message:</label>
-            <textarea data-cy="text" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+            <textarea placeholder="Enter your message here!" data-cy="text" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
           </fieldset>
 
           <button data-cy="submit" type="submit" className="btn-primary" id="contact-submit">Submit</button>
