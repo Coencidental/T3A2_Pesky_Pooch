@@ -30,7 +30,6 @@ export default function EditEvent(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log("Submitting an event edit")
 
     await axios.put("/events/update", subject, {
       headers: {
