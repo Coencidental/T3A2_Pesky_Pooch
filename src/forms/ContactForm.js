@@ -108,6 +108,7 @@ constructor(props) {
 
   render() {
     return (
+  <section className="form-container">
     <div className="center">
           <div className="ear ear--left"></div>
           <div className="ear ear--right"></div>
@@ -209,6 +210,7 @@ constructor(props) {
             </div>
           </div>
         </div>
+    </section>
     );
   }
 }

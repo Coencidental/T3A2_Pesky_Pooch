@@ -50,10 +50,9 @@
   box-sizing: border-box;
 }
 
+
+
 .center {
-  margin-left: 65%;
-  margin-right: 30%;
-  // margin-top: 68%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   // formatting
@@ -255,10 +254,6 @@
   -webkit-transform: translate(2px, -155px) rotate(-160deg);
   transform: translate(2px, -155px) rotate(-160deg);
 }
-// .center .hands .hand--left.peek {
-//   -webkit-transform: translate(0px, -120px) rotate(-160deg);
-//   transform: translate(0px, -120px) rotate(-160deg);
-// }
 
 .center .hands .hand--right {
   // left: 170px;
@@ -269,11 +264,6 @@
   -webkit-transform: translate(-6px, -155px) rotate(160deg);
   transform: translate(-6px, -155px) rotate(160deg);
 }
-
-// .center .hands .hand--right.peek {
-//   -webkit-transform: translate(-4px, -120px) rotate(160deg);
-//   transform: translate(-4px, -120px) rotate(160deg);
-// }
 
 .center .hands .finger {
   position: relative;
