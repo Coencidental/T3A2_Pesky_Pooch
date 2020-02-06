@@ -11,6 +11,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  display: absolute;
+  z-index: 100;
   position: sticky;
   top: 0;
   border-bottom: 0.25rem solid rgba(60, 55, 68, 0.301);
