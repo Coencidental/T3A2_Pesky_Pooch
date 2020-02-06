@@ -66,28 +66,25 @@
   }
 
 
-   a {
-      color: white;
-      border-radius: 1rem;
-      text-transform: uppercase;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-weight:  bold;
+  a {
+    color: white;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight:  bold;
 
-      &:active, &:hover {
-        // background: #1b9cff67;
-        background: rgba(60, 55, 68, 0.438);;
-        transition: 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) all;
-      }
+    &:active, &:hover {
+      background: rgba(60, 55, 68, 0.438);;
+      transition: 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) all;
     }
   }
 }
 
 .services-text {
   width: 100%;
-  border: 1px solid red;
 }
 
 .text-wrapper {
@@ -101,6 +98,7 @@
 }
 
 // -- Events -- //
+
 .events {
   display: flex;
   flex-direction: row;
@@ -128,7 +126,6 @@
     .event-loc {
       font-size: 2rem;
     }
-
   }
 }
 

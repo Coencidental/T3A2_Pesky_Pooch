@@ -21,7 +21,6 @@ export default function DeleteService(props) {
         }})
       .then(res => {
         props.refreshServices()
-        console.log('Successfully submitted delete service request')
       })
       .catch(err => console.log(err))
     }

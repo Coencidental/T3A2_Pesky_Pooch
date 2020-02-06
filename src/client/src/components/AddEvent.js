@@ -21,9 +21,7 @@ export default function AddEvent(props) {
   const handleSubmit = async (event) => {
     event.preventDefault()
     let token = sessionStorage.getItem('token')
-    console.log(formRef.current)
     let formData = new FormData(formRef.current)
-    console.log(formData.description)
     await axios.post("/events/new", formData, {
       headers: {
       'Authorization': token
