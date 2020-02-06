@@ -10,17 +10,14 @@ export default function ServicesPage(props) {
   const [events, setEvents] = useState([])
 
   const fetchServices = async () => {
-    console.log("Updating ServicesPage services")
     await Axios.get('http://localhost:7002/api/services')
     .then(res => setServices(res.data))
     .catch(err => console.log(err))
   }
 
   const fetchEvents = async () => {
-    console.log("Updating ServicesPage events")
     await Axios.get('http://localhost:7002/api/events')
     .then(res => {
-      console.log(res.data)
       setEvents(res.data)
     })
     .catch(err => console.log(err))

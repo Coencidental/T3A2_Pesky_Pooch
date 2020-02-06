@@ -7,13 +7,14 @@ export default function Services(props) {
 
   useEffect(() => {
     props.renderChanges()
+    setServices(props.allServices)
   }, [])
 
   return (
     <>
       <div className="services-container">
         <h2>All current services</h2>
-        {( props.allServices.count) >= 1 ? (
+        {( props.allServices.length > 0) ? (
         <> 
           <div className="services">      
             { props.allServices.map(service => {

@@ -9,15 +9,12 @@ export default function DeleteEvent(props) {
   const token = sessionStorage.getItem('token')
 
   const fetchEvents = async () => {
-    console.log(process.env.REACT_APP_BASEURL + "events")
     await axios.get(`/events`, {
       headers: {
         'Authorization': token
       }})
     .then(res => {
       setEvents(res.data)
-      console.log('Fetched events')
-      console.log(res.data)
     })
     .catch(err => console.log("Could not retrieve events", err))
   }
@@ -31,7 +28,6 @@ export default function DeleteEvent(props) {
         }})
       .then(res => {
         fetchEvents()
-        console.log('Successfully submitted delete event request')
       })
       .catch(err => console.log(err))
       props.updateServicesEvents()

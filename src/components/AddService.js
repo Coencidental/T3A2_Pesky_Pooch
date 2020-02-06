@@ -13,7 +13,6 @@ export default function AddService(props) {
   const setThumbnail = (file) => {
     let newParams = {...serviceParams, thumbnail: file}
     setServiceParams(newParams)
-    console.log(serviceParams)
   }
 
   const formRef = useRef(null)
@@ -21,7 +20,6 @@ export default function AddService(props) {
   const handleSubmit = async (event) => {
     event.preventDefault()
     let token = sessionStorage.getItem('token')
-    console.log(formRef.current)
     let formData = new FormData(formRef.current)
     await axios.post("/services/new", formData, {
       headers: {
