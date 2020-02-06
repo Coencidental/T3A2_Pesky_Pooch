@@ -53,8 +53,8 @@
 
 
 .center {
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
+  // -webkit-transform: translate(-50%, -50%);
   // formatting
   // width: 275px;
   // height: 490px;
@@ -64,7 +64,6 @@
   overflow: hidden;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#f9a743), to(#f9db5f));
   background-image: linear-gradient(to top right, #f9a743, #f9db5f);
-  // position: relative;
 
   margin: 0 auto;
 }
@@ -98,9 +97,11 @@
 }
 .center .ear.ear--left {
   left: -135px;
+  display: none;
 }
 .center .ear.ear--right {
   right: -135px;
+  display: none;
 }
 .center .face {
   display: -webkit-box;
@@ -466,5 +467,8 @@
 
   .center {
     width: 100%;
+    display: relative;
+    border: 1px solid red;
   }
 }
+
