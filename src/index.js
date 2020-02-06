@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:7002/api/';
+axios.defaults.baseURL = 'https://peskypoochapi.herokuapp.com/';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
