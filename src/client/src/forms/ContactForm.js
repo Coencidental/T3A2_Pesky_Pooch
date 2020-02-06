@@ -11,7 +11,7 @@ export default class ContactForm extends Component {
   componentDidMount() {
     let emailInput = document.querySelector(".email");
     let titleInput = document.querySelector(".title");
-    let messageInput = document.querySelector(".message")
+    let messageInput = document.querySelector(".message");
     let face = document.querySelector(".face");
 
     titleInput.addEventListener("focus", event => {
@@ -107,7 +107,6 @@ constructor(props) {
 
   render() {
     return (
-      <div className="dog-form">
     <div className="center">
           <div className="ear ear--left"></div>
           <div className="ear ear--right"></div>
@@ -208,8 +207,7 @@ constructor(props) {
               <div className="fa fa-paw"></div></a>
             </div>
           </div>
-      </div>
-      </div>
+        </div>
     );
   }
 }
