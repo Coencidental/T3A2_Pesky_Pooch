@@ -31,7 +31,6 @@ export default function EditService(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log("Submitting a service edit")
 
     await Axios.put("services/edit", subject, {
       headers: {
