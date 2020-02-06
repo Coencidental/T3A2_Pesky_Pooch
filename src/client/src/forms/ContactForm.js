@@ -11,7 +11,7 @@ export default class ContactForm extends Component {
   componentDidMount() {
     let emailInput = document.querySelector(".email");
     let titleInput = document.querySelector(".title");
-    let messageInput = document.querySelector(".message")
+    let messageInput = document.querySelector(".message");
     let face = document.querySelector(".face");
 
     titleInput.addEventListener("focus", event => {
