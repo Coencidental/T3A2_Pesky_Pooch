@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ServicesControlPanel from './ServicesControlPanel'
-
+import '../styles/services.scss'
 
 export default function Services(props) {
   const [services, setServices] = useState(props.allServices)
@@ -11,14 +11,11 @@ export default function Services(props) {
 
   return (
     <>
-    { sessionStorage.getItem('token') ? < ServicesControlPanel services={props.allServices} updateServices={props.renderChanges}/> : (null)}
       <div className="services-container">
-      { props.allServices ?
-        (
+        <h2>All current services</h2>
+        {( props.allServices.count) >= 1 ? (
         <> 
-          <p>All current services</p>
-          <div className="services">
-            
+          <div className="services">      
             { props.allServices.map(service => {
             return (
             <div className="service-card" key={service._id}>
@@ -27,14 +24,16 @@ export default function Services(props) {
               <p className="service-cost">{service.cost}</p>
               { service.thumbnail ? (<img className="thumbnail" width="100px" src={service.thumbnail}></img>) : (null)}
             </div>
-            )}) }
+            )}) 
+            }
           </div>
         </>
         ):
         (
-        <p>There are currently no regularly available services at Pesky Pooch right now, sorry!</p>
-        ) }
+        <p>Loading...</p>
+        ) 
+        }
       </div>
-      </>
+    </>
   )
 }
