@@ -14,7 +14,7 @@
   .contact-header-txt {
     overflow: hidden;
     height: 30vh;
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 100%;
     background-color: $babyblue;
     padding-bottom: 30rem;
@@ -58,7 +58,7 @@
   // formatting
   // width: 275px;
   // height: 490px;
-  width: 475px;
+  width: 100%;
   height: 590px;
   border-radius: 3px;
   overflow: hidden;
@@ -323,6 +323,7 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
+  width: 100%;
 }
 .center .login label {
   position: relative;
@@ -461,14 +462,17 @@
 }
 
 .dog-form {
-  width: 75%;
-  height: 75%;
-  margin: auto;
+  width: fit-content;
 
-  .center {
-    width: 100%;
-    display: relative;
-    border: 1px solid red;
-  }
+  
+  // height: 75%;
+  // margin: auto;
+
 }
 
+@media only screen and (max-width: 500px) {
+  .hands {
+    transform: translateX(-25vw);
+    z-index: 2;
+  }
+}

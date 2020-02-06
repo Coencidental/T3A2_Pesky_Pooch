@@ -231,45 +231,45 @@
 // -- Contact-Page-Form -- //
 
   .contact-form {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
-    fieldset {
-      width: 75%;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-      border: none;
+    // fieldset {
+    //   width: 75%;
+    //   margin: auto;
+    //   display: flex;
+    //   flex-direction: column;
+    //   padding: 1rem;
+    //   border: none;
 
-      * {
-        margin: auto;
-        text-align: center;
-        font-size: 1rem;
-        border-radius: 0.25rem;
-      }
+    //   * {
+    //     margin: auto;
+    //     text-align: center;
+    //     font-size: 1rem;
+    //     border-radius: 0.25rem;
+    //   }
 
-      label {
-        width: 50%;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
+    //   label {
+    //     width: 50%;
+    //     font-size: 1.5rem;
+    //     margin-bottom: 1rem;
+    //   }
 
-      input {
-        width: 80%;
-        padding: 0.5rem 0;
-      }
+    //   input {
+    //     width: 80%;
+    //     padding: 0.5rem 0;
+    //   }
 
-      .message {
-        width: 80%;
-        height: 25vh;
-        resize: none;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-    }
+    //   .message {
+    //     width: 80%;
+    //     height: 25vh;
+    //     resize: none;
+    //     font-family: Arial, Helvetica, sans-serif;
+    //   }
+    // }
   }
 
   .contact-header-txt {
@@ -349,6 +349,8 @@
 
 @media only screen and (max-width: 952px) {
   .form-container {
+    display: flex;
+    flex-direction: row;
     .login-form {
       width: 100%;
 
