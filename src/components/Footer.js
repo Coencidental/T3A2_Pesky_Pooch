@@ -13,7 +13,7 @@ export default class Footer extends Component {
         </p>
         <p className="social-icons">
           <a href="https://www.facebook.com/PeskyPooch/" alt="pesky pooch facebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
-          </p>
+        </p>
       </footer>
     );
   }
